@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
 public class OpenAiConfiguration {
 
 	@Bean
-    ChatClient chatClient(ChatClient.Builder builder) {
-        return builder.build();
-    }
-	
+	ChatClient chatClient(ChatClient.Builder builder) {
+		return builder.build();
+	}
+
 }

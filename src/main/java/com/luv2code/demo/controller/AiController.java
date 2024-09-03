@@ -13,18 +13,15 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 @RequestMapping("/api/v1/ai")
 public class AiController {
-	
+
 	private final ChatClient chatClient;
 
 	@GetMapping("")
-	public ChatResponse chatOpenAi(@RequestParam(value = "message", defaultValue = "Tell a joke") String message){
-		
-		ChatResponse chatResponse = chatClient.prompt()
-				.user(message)
-				.call()
-				.chatResponse();
-		
+	public ChatResponse chatOpenAi(@RequestParam(value = "message", defaultValue = "Tell a joke") String message) {
+
+		ChatResponse chatResponse = chatClient.prompt().user(message).call().chatResponse();
+
 		return chatResponse;
 	}
-	
+
 }
