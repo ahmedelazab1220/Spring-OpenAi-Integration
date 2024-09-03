@@ -4,11 +4,11 @@ This project demonstrates the integration of OpenAI's API into a Spring Boot app
 
 ## Project Structure
 
-1. Configuration Class
-   **`OpenAiConfiguration`** : This class configures the **ChatClient** bean, which is responsible for communicating with the OpenAI API. The ChatClient is initialized using its builder and managed by Spring's IoC container, making it accessible throughout the application.
+- Configuration Class
+  **`OpenAiConfiguration`** : This class configures the **ChatClient** bean, which is responsible for communicating with the OpenAI API. The ChatClient is initialized using its builder and managed by Spring's IoC container, making it accessible throughout the application.
 
-2. Controller Class
-   **`AiController`** : This REST controller exposes an endpoint that allows users to send messages to the OpenAI chat model. The controller uses the **ChatClient** to process the input message and returns the AI-generated response.
+- Controller Class
+  **`AiController`** : This REST controller exposes an endpoint that allows users to send messages to the OpenAI chat model. The controller uses the **ChatClient** to process the input message and returns the AI-generated response.
 
 ## Endpoints
 
